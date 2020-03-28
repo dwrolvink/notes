@@ -3,8 +3,7 @@ current_folder=`pwd`
 
 cd "$repo"
 
-#vim "${1}"
-[ "${1}" == "save" ] && git pull && git add . --all && git commit -m "update" && git push || vim "${1}"
+[ "${1}" == "save" ] && git pull && git add . --all && git commit -m "update" && git push || vim "${1}.md"
 
 
 cd "$current_folder"
