@@ -1,7 +1,10 @@
 repo="/home/dorus/git/notes"
 current_folder=`pwd`
+
 cd "$repo"
 
-[ "${1}" == "save" ] && git pull && git add . --all && git commit -m "update" && git push;
+#vim "${1}"
+[ "${1}" == "save" ] && git pull && git add . --all && git commit -m "update" && git push || vim "${1}"
+
 
 cd "$current_folder"
